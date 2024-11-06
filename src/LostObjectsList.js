@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FlatList, View, Text, TouchableOpacity } from "react-native";
 
 function req(method, baseURL, path, fun = function (j) {}) {
-  // proper formatting
   if (baseURL.charAt(baseURL.length - 1) != "/") {
     baseURL = baseURL + "/";
   }
